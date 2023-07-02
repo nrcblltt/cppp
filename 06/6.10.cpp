@@ -1,12 +1,5 @@
 #include <iostream>
-//#include "Chapter6.h"
-
-int swap(int *x, int *y) {
-	int temp = *x;
-	*x = *y;
-	*y = temp;
-	return 0;
-}
+#include "Chapter6.h"
 
 int main() {
 	int a = 25;
@@ -18,5 +11,12 @@ int main() {
 	
 	std::cout << "a: " << a << " b: " << b;
 
+	return 0;
+}
+
+int swap(int* x, int* y) {
+	int temp = *x;
+	*x = *y;
+	*y = temp;
 	return 0;
 }
