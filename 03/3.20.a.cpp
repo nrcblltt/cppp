@@ -14,8 +14,13 @@ int main() {
   }
 
   if (intv.empty()) {
-    cout << "empty vector" << endl;
+    cout << "no numbers" << endl;
     return 1;
+  }
+
+  if (intv.size() < 2) {
+    cout << "give me at least two numbers" << endl;
+    return 2;
   }
 
   cout << endl;
